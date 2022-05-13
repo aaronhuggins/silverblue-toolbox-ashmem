@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Update toolbox installed components"
+toolbox run sudo dnf -y update
+
 echo "Install Development tools"
 toolbox run sudo dnf -y groupinstall "Development Tools"
 
